@@ -2,27 +2,34 @@
 
 Prototype mobile-first de la surprise d'anniversaire de Mariam.
 
-## Tester localement
-Ouvrir `index.html` dans un navigateur.
+## Essayer la version de démonstration
+Ouvrir le jeu dans un navigateur. Pour afficher les raccourcis d'essai, ajouter `?test=1` à l'adresse.
 
-## Mode test
-Ajouter `?test=1` à l'URL pour afficher les raccourcis de test. Attention : sur un site public, ce mode n'est pas protégé par un mot de passe et ne doit pas être considéré comme privé.
+Le mode test permet d'avancer dans les épreuves, d'ouvrir un cadeau au hasard, d'afficher la fin et de recommencer. Le mode test n'est pas protégé et ne doit pas être considéré comme privé.
+
+## Fonctionnalités jouables
+- 15 questions, indices pour la date, progression et sept fragments.
+- Photos sélectionnées et prévisualisées localement; elles ne sont ni envoyées ni enregistrées.
+- Quatre lettres à ouvrir.
+- Puzzle tactile à cases glissantes.
+- Illustration de lune téléchargeable comme fond d'écran.
+- Séquence de souvenirs de démonstration.
+- Ambiance sonore synthétisée, activée uniquement après une interaction.
+- Aperçu d'une vidéo choisie sur l'appareil; elle reste locale.
+- Progression enregistrée seulement dans le stockage local du navigateur.
+
+## Personnalisation avant diffusion
+Les photos, la vraie vidéo, le montage souvenir et les textes personnels définitifs ne sont pas fournis dans le dépôt. Les éléments concernés sont clairement présentés comme des démonstrations ou des aperçus locaux. Remplace-les par les vrais fichiers avant de partager le jeu.
+
+## Tester localement
+Ouvrir `index.html` dans un navigateur. Le mode test se lance avec `?test=1`.
 
 ## Publication GitHub Pages
-Dans le dépôt, ouvrir **Settings → Pages**, choisir **Deploy from a branch**, sélectionner la branche **main** et le dossier **/(root)**, puis enregistrer. Attendre la fin du déploiement pour obtenir le lien.
+Dans le dépôt, ouvrir **Settings → Pages**, choisir **Deploy from a branch**, sélectionner la branche **main** et le dossier **/(root)**, puis enregistrer. Attendre la fin du déploiement pour obtenir le lien. Les nouveaux changements sont déployés après chaque mise à jour de la branche choisie.
 
-## À compléter avant le 7 janvier 2027
-- Ajouter les vraies photos du couple.
-- Intégrer le puzzle tactile et les cadeaux numériques réels.
-- Ajouter l'ambiance sonore (les navigateurs demandent généralement une interaction avant de jouer du son).
-- Intégrer la vidéo finale personnelle de plus de 5 minutes.
-- Tester le jeu sur téléphone.
+## Organisation
+- `index.html` : écrans et structure accessible.
+- `styles.css` : présentation adaptative mobile et ordinateur.
+- `game.js` : questions, progression, cadeaux, aperçu local des médias et mode test.
 
-Cette version est une première base fonctionnelle, pas encore la version finale. Les photos et vidéos personnelles ne sont pas incluses.
-
-## Organisation du jeu
-- `index.html` contient les écrans et leur structure.
-- `styles.css` contient les styles et les adaptations visuelles.
-- `game.js` contient la progression, les questions, les récompenses et le mode test.
-
-À la porte d’entrée, la date peut être saisie avec ou sans séparateur (par exemple `25/08` ou `2508`).
+À la porte d'entrée, la date accepte `25/08`, `2508` et les formats avec l'année.
